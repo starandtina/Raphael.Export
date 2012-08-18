@@ -140,7 +140,7 @@
 
 							return initial;
 						},
-						{ style: 'text-anchor: middle; ' + styleToString(style) + ';' }
+						{ style: ' ' + styleToString(style) + ';' } //remove the inline style of 'text-anchor: middle'; please refer to https://github.com/ElbertF/Raphael.Export/issues/19
 						),
 					node.matrix,
 					tag('tspan', { dy: computeTSpanDy(style.font.size, line + 1, node.attrs['text'].split('\n').length) }, null, text)
